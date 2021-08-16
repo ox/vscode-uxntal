@@ -1,0 +1,25 @@
+{
+    "name": "uxntal",
+    "displayName": "Uxntal",
+    "description": "Syntax highlighting and tools for the Uxntal language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "uxntal",
+            "aliases": ["Uxntal", "uxntal"],
+            "extensions": [".tal"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "uxntal",
+            "scopeName": "source.uxntal",
+            "path": "./syntaxes/uxntal.tmLanguage.json"
+        }]
+    }
+}
